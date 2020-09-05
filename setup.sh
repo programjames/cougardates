@@ -1,1 +1,1 @@
-cp -R site /var/www/html/
+cp -R site/* /var/www/html/
