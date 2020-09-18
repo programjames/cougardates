@@ -9,7 +9,7 @@ body {
   background-color: var(--cougar_white);
 }
 
-ul.menu {
+.menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -18,10 +18,8 @@ ul.menu {
   border-width: 0.5em;
   border-style: solid;
   align-items: center;
-}
-
-.menu li {
-  float: left;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .menu li a {
@@ -49,32 +47,49 @@ ul.menu {
   background-color: var(--cougar_blue);
 }
 
-#profilepic {
+.profilepic {
   vertical-align: top;
   display: inline-block;
   text-align: center;
   width: 6em;
-  height: 7em;
   float: left;
   margin-right: 2em;
 
 }
 
-#profilepic img {
+.profilepic p {
+  font-size: 12pt;
+  font-family: sans-serif;
+}
+
+.profilepic img {
   height: 7em;
 }
 
-ol, ul {
-  margin-left: 8em;
-  font-family:
+.profileinfo {
+  display: flex;
+  justify-content: flex-start;
 }
 
-div.profile {
+.topic{
+  font-family: Arial;
+  font-weight: bold;
+  margin: 0;
+}
+
+ol, ul {
+  font-family: Arial;
+}
+
+.profile {
   font-family: Times, serif;
   border-style: double;
   border-width: thick;
   padding: 1em;
   background-color: var(--cougar_pale);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .profile h2 {
@@ -101,4 +116,58 @@ h1 {
   padding-bottom: 10pt;
   background: var(--cougar_pale);
   display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .menu {
+    flex-direction: column;
+    align-items: stretch;
+    border-style: none;
+    border-width: 0;
+  }
+  h1 {
+    display: flex;
+    justify-content: center;
+  }
+  .profile {
+    border-radius: 0;
+    border-style: none;
+    background-color: var(--cougar_white);
+    align-items: stretch;
+    padding: 0
+  }
+
+  .name {
+    display: flex;
+    justify-content: center;
+  }
+
+  .profilepic {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-right: 0;
+    align-self: center;
+  }
+
+  .profileinfo {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+  }
+  p {
+    margin: 1em;
+  }
+
+  .hidden_block, .hidden_title {
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+  }
 }
