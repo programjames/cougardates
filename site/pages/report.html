@@ -12,63 +12,68 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-cougar">
-    <a class="navbar-brand" href="#">
-      <img class="logo" src="/resources/images/logo.png">
-      <p>Cougardates</p>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <div id="body-container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-cougar">
+      <a class="navbar-brand" href="#">
+        <img class="logo" src="/resources/images/logo.png">
+        <p>Cougardates</p>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="/index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/pages/matchmaker.html">Matchmaker</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/pages/faq.html">FAQ</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/pages/deals.html">Deals</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="/pages/report.html">Report <span class="sr-only">(current)</span></a>
-        </li>
-      </ul>
-      <ul class="navbar-nav mr-right">
-        <li class="nav-item login">
-          <a class="nav-link" href="javascript:alert('This will be added when I add my database.')">Signup</a>
-        </li>
-        <li class="nav-item login">
-          <a class="nav-link" href="javascript:alert('I need Javascript for this button!')">Login</a>
-        </li>
-      </ul>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/matchmaker.html">Matchmaker</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/deals.html">Deals</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/pages/report.html">Report <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <ul class="navbar-nav mr-right">
+          <li class="nav-item login">
+            <a class="nav-link" href="javascript:alert('This will be added when I add my database.')">Signup</a>
+          </li>
+          <li class="nav-item login">
+            <a class="nav-link" href="javascript:alert('I need Javascript for this button!')">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="title">
+      <h1>Report a User</h1>
     </div>
-  </nav>
+    <form class="report-form">
+      <div class="report-username">
+        <p>Username:</p>
+        <input type="text" value="" id="report-username"></input>
+      </div>
+      <div class="report-reason">
+        <p>Reason:</p>
+        <input type="text" value="" id="report-reason"></input>
+      </div>
+      <input type="submit" id="report-submit"></input>
+    </form>
+    <p>
+      Report any abuse or misconduct by a user. We will take a look into your report
+      as soon as possible and will dole out the appropriate punishment.
+    </p>
 
-  <div class="title">
-    <h1>Report a User</h1>
+    <div class="footer small-page">
+      <a href="https://github.com/programjames/cougardates">GitHub Repository</a>
+    </div>
   </div>
-  <form class="report-form">
-    <div class="report-username">
-      <p>Username:</p>
-      <input type="text" value="" id="report-username"></input>
-    </div>
-    <div class="report-reason">
-      <p>Reason:</p>
-      <input type="text" value="" id="report-reason"></input>
-    </div>
-    <input type="submit" id="report-submit"></input>
-  </form>
-  <p>
-    Report any abuse or misconduct by a user. We will take a look into your report
-    as soon as possible and will dole out the appropriate punishment.
-  </p>
-
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
