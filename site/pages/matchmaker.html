@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+  <title>Cougardates</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="/resources/images/logo.png" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.4/css/all.css">
+  <link rel="stylesheet" href="/resources/css/styles.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-cougar">
+    <a class="navbar-brand" href="#">
+      <img class="logo" src="/resources/images/logo.png">
+      <p>Cougardates</p>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/pages/matchmaker.html">Matchmaker <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/faq.html">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/deals.html">Deals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/report.html">Report</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav mr-right">
+        <li class="nav-item login">
+          <a class="nav-link" href="javascript:alert('This will be added when I add my database.')">Signup</a>
+        </li>
+        <li class="nav-item login">
+          <a class="nav-link" href="javascript:alert('I need Javascript for this button!')">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="title">
+    <h1>Matchmaker</h1>
+    <h2>Find people to match with!</h2>
+  </div>
+
+  <div class="roller">
+    <div class="profile-preview">
+      <div class="roller-center">
+        <div class="button-left">
+          <i class="fas fa-4x fa-angle-left"></i>
+        </div>
+        <div class="button-right">
+          <i class="fas fa-4x fa-angle-right"></i>
+        </div>
+        <p class="name">James Camacho</p>
+        <div class="profile-info">
+          <img src="/profiles/jamesc/profilepic.jpg" />
+          <div class="profile-topics">
+            <p>
+              <span class="topic">Major:</span> Math
+            </p>
+            <p>
+              <span class="topic">Age:</span> 16
+            </p>
+            <p>
+              <span class="topic">Favorite Book:</span> The Way of Kings
+            </p>
+            <p class="topic">
+              Hobbies:
+            </p>
+            <ol>
+              <li>Running</li>
+              <li>Coding</li>
+              <li>Math</li>
+            </ol>
+          </div>
+          <button>More Info</button>
+        </div>
+      </div>
+    </div>
+    <div class="profile-preview roller-left">
+      <p class="name">James Da Macho</p>
+      <div class="profile-info">
+        <img src="/profiles/jamesa/profilepic.jpg" />
+        <div class="profile-topics">
+          <p>
+            <span class="topic">Major:</span> ACME (CS emphasis).
+          </p>
+          <p>
+            <span class="topic">Age:</span>
+            < 18 </p>
+              <p>
+                <span class="topic">Favorite TV Show:</span> 24
+              </p>
+              <p class="topic">
+                Hobbies:
+              </p>
+              <ol>
+                <li>Cross Country</li>
+                <li>Mathematics</li>
+                <li>Programming</li>
+              </ol>
+        </div>
+        <button>More Info</button>
+      </div>
+    </div>
+    <div class="profile-preview roller-right">
+      <p class="name">Jesse Camac</p>
+      <div class="profile-info">
+        <img src="/profiles/jamesd/profilepic.jpg" />
+        <div class="profile-topics">
+          <p>
+            <span class="topic">Major:</span> Philosophy
+          </p>
+          <p>
+            <span class="topic">Age:</span> 160
+          </p>
+          <p>
+            <span class="topic">Favorite Pose:</span> Thinking Man
+          </p>
+          <p class="topic">
+            Hobbies:
+          </p>
+          <ol>
+            <li>Filler text</li>
+            <li>Lorem ipsum sec tent</li>
+            <li>I've run out of ideas</li>
+          </ol>
+        </div>
+        <button>More Info</button>
+      </div>
+    </div>
+  </div>
+  <form class="filters">
+    <h3 class="filter-title">Filters</h3>
+    <p>Gender:
+      <select name="gender" id="gender">
+        <option value="none">(none)</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </p>
+    <p>Proximity:
+      <input type="number" name="dist" id="dist">(miles)</input>
+    </p>
+    <div class="ml">
+      Personalize
+      <span id="ml-question">
+        <i class="fas fa-question-circle" id="ml-info-question"></i>
+        <div id="ml-info">
+          We track which profiles you click on to give you options
+          you are more likely to enjoy.
+        </div>
+      </span>
+      <input type="checkbox" id="machinelearning" name="machinelearning" value="machinelearning">
+      </input>
+    </div>
+  </form>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
